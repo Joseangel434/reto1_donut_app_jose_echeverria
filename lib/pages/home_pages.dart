@@ -65,7 +65,7 @@ class _HomePagesState extends State<HomePages> {
                     "I want to ",
                     style: TextStyle(fontSize: 32),
                   ),
-                  Text("Eat",
+                  Text("EAT",
                       style: TextStyle(
                           fontSize: 32,
                           fontWeight: FontWeight.bold,
@@ -75,7 +75,7 @@ class _HomePagesState extends State<HomePages> {
             ),
             TabBar(tabs: mytabs),
 
-           const Expanded(child: TabBarView(children:[
+          Expanded(child: TabBarView(children:[
               //donut
               DonutTab(),
               //burger
