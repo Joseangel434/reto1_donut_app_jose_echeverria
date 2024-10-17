@@ -17,15 +17,15 @@ class _HomePagesState extends State<HomePages> {
 
   List <Widget> mytabs = [
     //donut tab
-    const MyTab(iconPath: 'lib/icons/donut.png',),
+    const MyTab(iconPath: 'lib/icons/donut.png', label: 'donas',),
     //burger tab
-    const MyTab(iconPath: 'lib/icons/burger.png',),
+    const MyTab(iconPath: 'lib/icons/burger.png', label: 'hamburguers',),
     // smoothie tab
-    const MyTab(iconPath: 'lib/icons/smoothie.png',),
+    const MyTab(iconPath: 'lib/icons/smoothie.png', label: 'smoothies',),
     // panCake tab
-    const MyTab(iconPath: 'lib/icons/pancakes.png',),
+    const MyTab(iconPath: 'lib/icons/pancakes.png', label: 'pancakes',),
     // pizza tab
-    const MyTab(iconPath: 'lib/icons/pizza.png',),
+    const MyTab(iconPath: 'lib/icons/pizza.png', label: 'pizzas',),
   ];
   @override
   Widget build(BuildContext context) {

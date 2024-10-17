@@ -72,11 +72,42 @@ class DonutTile extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(bottom: 12), // Opcionalmente agrega espacio extra si deseas
               child: Text(
-                "Donitas",
+                "Dunkin's",
                 style: TextStyle(
                   fontSize: 16,
                   color: Colors.grey[600], // Un color gris para darle un toque secundario
                 ),
+              ),
+            ),
+            // Ícono de corazón y botón de "Add"
+            Padding(
+              padding: const EdgeInsets.only(bottom: 12), // Espaciado para mantener simetría
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  // Ícono de corazón
+                  Icon(
+                    Icons.favorite,
+                    color: Colors.pink[600], // Color Pink600
+                  ),
+                  const SizedBox(width: 10), // Espacio entre el ícono y el botón
+                  // Botón de "Add"
+                  GestureDetector(
+                    onTap: () {
+                      // Acción cuando se presione el botón
+                      print('Add pressed');
+                    },
+                    child: Text(
+                      'Add',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18,
+                        color: Colors.grey[800], // Color Grey800
+                        decoration: TextDecoration.underline, // Subrayado
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ),
           ],
